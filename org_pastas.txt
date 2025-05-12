@@ -1,0 +1,22 @@
+vendas_analise/
+├── data/
+│   └── vendas.csv             # Arquivo(s) CSV com os dados brutos
+│
+├── src/
+│   ├── __init__.py
+│   ├── leitura_dados.py       # Funções para ler e tratar o CSV
+│   ├── analise_estatistica.py # Cálculo de média e resumo estatístico
+│   ├── graficos.py            # Funções para gerar os gráficos
+│   └── utils.py               # Funções auxiliares (se necessário)
+│
+├── output/
+│   ├── graficos/              # Gráficos gerados (PNG, PDF, etc.)
+│   └── relatorios/            # Relatórios em texto, HTML, CSV ou PDF
+│
+├── tests/
+│   ├── test_leitura_dados.py  # Testes para a leitura de dados
+│   └── test_analise.py        # Testes para análise estatística
+│
+├── main.py                    # Script principal que orquestra o projeto
+├── requirements.txt           # Lista de dependências (bibliotecas Python)
+└── README.md                  # Descrição geral do projeto

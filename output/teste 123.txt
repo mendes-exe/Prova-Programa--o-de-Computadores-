@@ -1,0 +1,5 @@
+A media é: 1700.0 
+O valor minimo: 1100 
+O valor maximo é: <function calc_max at 0x0000016F39843880> 
+O desvio padrão é: 1700.0 
+Os quartis são:  ('1425.0', '1775.0', '1962.5')

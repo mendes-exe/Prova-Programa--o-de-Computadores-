@@ -1,0 +1,7 @@
+A  é: 1700.0 
+O valor minimo: O minimo é: R$ 1100 no mes de: + mes       Março
+vendas     1100
+Name: 2, dtype: object 
+O valor maximo é: 2200 
+O desvio padrão é: 1700.0 
+Os quartis são:  ('1425.0', '1775.0', '1962.5')

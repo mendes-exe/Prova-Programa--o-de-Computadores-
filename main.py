@@ -5,6 +5,7 @@ from src.maximo import calc_max
 from src.desv_pad import calc_desv_pad
 from src.quartil import calc_quartil
 from src.salvar_txt import save_txt
+from src.gerar_graf import gerar_graf
 
 print("1 - Calcular média\n" \
 "2 - Calcular minimo\n" \
@@ -19,9 +20,9 @@ opcaoteste = int(input("Escolha uma opção: "))
 def menu(opcao):
     match opcao:
         case 1:
-            print(f'A média é: {calc_media()}')
+            print(calc_media())
         case 2:
-            print(f'O mínimo é: {calc_minimo()}')
+            print(calc_minimo())
         case 3:
             print(f'O máximo é: {calc_max()}')
         case 4:
@@ -32,7 +33,8 @@ def menu(opcao):
             save_txt(calc_media(), calc_minimo(), calc_max(), calc_desv_pad(), calc_quartil())
             print("Arquivo TXT gerado com sucesso!")
         case 7:
-            print("Gerar gráficos...")  
+            gerar_graf()
+            print("Geraando gráficos...")  
         case _:
             print("Opção incorreta!")
             opcaoteste = int(input("Escolha uma opção válida: "))

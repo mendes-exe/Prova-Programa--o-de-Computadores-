@@ -3,7 +3,7 @@ import pandas as pd
 
 def calc_media():
     media = (ler_csv())['vendas'].mean()
-    # print("A média é: R$" + str(media))
+    print("A média é: R$" + str(media))
     return media
 
 calc_media()

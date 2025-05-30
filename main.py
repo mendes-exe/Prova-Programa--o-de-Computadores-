@@ -1,4 +1,3 @@
-from src.ler_arquivo_csv import ler_csv
 from src.media import calc_media
 from src.minimo import calc_minimo
 from src.maximo import calc_max
@@ -20,21 +19,21 @@ opcaoteste = int(input("Escolha uma opção: "))
 def menu(opcao):
     match opcao:
         case 1:
-            print(calc_media())
+            calc_media()
         case 2:
-            print(calc_minimo())
+            calc_minimo()
         case 3:
-            print(f'O máximo é: {calc_max()}')
+            calc_max()
         case 4:
-            print(f'O desvio padrão é: {calc_desv_pad()}')
+            calc_desv_pad()
         case 5:
-            print(f'O quartil é: {calc_quartil()}')
+            calc_quartil()
         case 6:
             save_txt(calc_media(), calc_minimo(), calc_max(), calc_desv_pad(), calc_quartil())
             print("Arquivo TXT gerado com sucesso!")
         case 7:
-            gerar_graf()
-            print("Geraando gráficos...")  
+            print("Gerando gráficos...")  
+            gerar_graf()  
         case _:
             print("Opção incorreta!")
             opcaoteste = int(input("Escolha uma opção válida: "))

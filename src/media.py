@@ -6,4 +6,4 @@ def calc_media():
     print("A média é: R$" + str(media))
     return media
 
-calc_media()
+# calc_media()
